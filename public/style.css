@@ -1,0 +1,24 @@
+.bold {
+  font-weight: bold;
+}
+
+.luckyBlueText {
+  color: #006ac7;
+}
+
+.luckyBlueBackground {
+  background-color: #006ac7;
+}
+
+.bolder {
+  font-weight: 900;
+}
+
+.normal {
+  font-weight: 500;
+}
+
+.divider {
+  border-width: 0.5px !important;
+  border-color: black !important;
+}

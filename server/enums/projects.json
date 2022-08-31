@@ -1,0 +1,52 @@
+{
+  "PERSONAL_WEBSITE": {
+    "name": "Personal Website",
+    "date": "March 2022",
+    "gitHub": "https://github.com/gpetty002/gpetty.git",
+    "language": "Vuejs, Vuetify, Javascript, Git",
+    "funFact": "I taught kids how to make their own websites, before I even made mine.",
+    "biggestChallenge": "Exploring and combining features of Vuetify to create clean creative UI, such as the v-cards and v-hover effect. Navigating through the Vuetify API documentation because it was new territory. Organizing enums, css styles, and components.",
+    "media": "img",
+    "url": "/websiteSS.png"
+  },
+  "KRABBY_PATTY": {
+    "name": "Krabby Patty Flipping Game (unfinished)",
+    "date": "July 2021 - March 2022",
+    "gitHub": "https://github.com/gpetty002/Squidward-Adventure.git",
+    "language": "C++, SFML 2.0, Git",
+    "funFact": "Most of the assets, like the game map and the krabby patties, I drew using Adobe Illustrator. I also animated the Squidward sprite in the main menu hardcoding each sprite from the spritesheet.",
+    "biggestChallenge": "Managing and organizing the clicks between a raw patty, a perfect patty, and a burnt patty. For awhile, it was difficult to get the sprite to change its texture after a certain amount of time on the grill.",
+    "media": "video",
+    "url": "https://www.youtube.com/embed/uLn7NWto0rQ"
+  },
+  "HOTEL_MANAGEMENT_SYSTEM": {
+    "name": "Hotel Management System",
+    "date": "March 2021",
+    "gitHub": "https://github.com/gpetty002/HotelManagementSystem.git",
+    "language": "C++, Git",
+    "funFact": "A lot of the names used for debugging and testing were from my favorite film, Almost Famous.",
+    "biggestChallenge": "Managing and organizing header and cpp files, as this was my first time doing OOP on my own. Also, making the text look somewhat nice on the terminal.",
+    "media": "img",
+    "url": "/hotelManagement.png"
+  },
+  "SIMS_MOBILE_APP": {
+    "name": "Sims 4 Cheats Mobile App",
+    "date": "January 2021",
+    "gitHub": "https://github.com/gpetty002/Sims4CheatsApp.git",
+    "language": "Swift UIKit, Swift",
+    "funFact": "I gave up on making this app more than 3 times. I first tried developing it back in 2017, but I got stuck trying to understand Xcode's UI. Four years later, I successfully developed the app in one week.",
+    "biggestChallenge": "Passing data backwards in the Career and Skills cheats scenes to the Bookmark scene. I wanted users to be able to keep their bookmarked cheats; I wanted the app to remember old data.",
+    "media": "video",
+    "url": "https://www.youtube.com/embed/nytJBKfvN1c"
+  },
+  "C_STYLE_BOARD_GAME": {
+    "name": "C-Style Board Game",
+    "date": "December 2020",
+    "gitHub": "https://github.com/gpetty002/C-StyleBoardGame.git",
+    "language": "C",
+    "funFact": "This was a school assignment for my Intro to Programming class. One of the hardest things I ever made because I was new to game logic.",
+    "biggestChallenge": "Printing the board. I had a difficult time understanding that you could store the characters for the project inside a 2D array given the correct conditions. Then just print everything once all if statements are passed.",
+    "media": "img",
+    "url": "/cBoard.png"
+  }
+}

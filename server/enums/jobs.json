@@ -1,0 +1,25 @@
+{
+  "SWE_INTERN": {
+    "role": "Software Engineer Intern",
+    "company": "Virgin Orbit",
+    "startDate": "June 2022",
+    "endDate": "September 2022",
+    "details": [
+      "Developed a web application to help notify admins when an application or its database is down.",
+      "Worked with the framework Vuejs to display an application's status.",
+      "Built backend logic and routes using Axios and Express to connect front-end UI to store in state data."
+    ],
+    "fontIcon": "fa-solid fa-rocket"
+  },
+  "CODE_INSTRUCTOR": {
+    "role": "Code Instructor",
+    "company": "Code Ninjas",
+    "startDate": "August 2020",
+    "endDate": "March 2021",
+    "details": [
+      "Taught children from the ages of 5 to 16 how to code in Javascript ,HTML, and CSS using popular video games, such as Minecraft and Roblox.",
+      "Created and organized coding lessons that focused on basic code syntac and logical problem solving."
+    ],
+    "fontIcon": "fa-solid fa-user-ninja"
+  }
+}
