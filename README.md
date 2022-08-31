@@ -1,4 +1,4 @@
-# my_website
+# Gisselle Petty | Software Developer
 
 ## Project setup
 ```
