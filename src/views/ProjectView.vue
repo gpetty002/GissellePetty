@@ -3,7 +3,7 @@
     <h3 class="projectsTitle">
       <span class="bold luckyBlueText">Projects</span>
     </h3>
-    <div class="projectBorder"></div>
+    <hr class="projectBorder" />
     <template v-for="(index, i) in myProjects">
       <v-col class="projectCards" :key="i" cols="100" md="100">
         <ProjectCard :project="index"></ProjectCard>
@@ -47,9 +47,9 @@ export default {
   width: 205px;
   height: 3px;
   position: absolute;
-  background: #006ac7;
   top: 7.2%;
   left: 41%;
+  border-bottom: 4px solid #006ac7;
 }
 .projectCards {
   margin-top: 12%;

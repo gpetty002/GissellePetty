@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <v-img class="VOPicture" src="../assets/FullBody.jpg"></v-img>
+    <v-img class="VOPicture" src="../assets/virginOrbitPhoto3.jpg"></v-img>
     <h3 class="aboutMe-Title">About Me.</h3>
     <h3 class="aboutMe-Name">
       Welcome to my website, I'm

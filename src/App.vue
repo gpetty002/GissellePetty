@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <div class="homeHeader" id="homeView">
+    <div class="desktopHomeHeader" id="homeView">
       <TopNavBar></TopNavBar>
       <HomeView></HomeView>
     </div>
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style>
-.homeHeader::before {
+.desktopHomeHeader::before {
   content: "";
   display: block;
   width: 100%;
@@ -43,7 +43,7 @@ export default {
   /* background-color: rgba(0, 0, 0, 0.537); */
   background-color: #3680d0;
 }
-.homeHeader {
+.desktopHomeHeader {
   position: relative;
 }
 </style>

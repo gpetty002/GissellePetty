@@ -8,9 +8,12 @@
             :icon="job.fontIcon"
             color="white"
             size="5x"
+            :style="{ left: cardIcon }"
           />
 
-          <v-card-title class="cardTitle">{{ job.company }}</v-card-title>
+          <v-card-title class="cardTitle" v-bind:style="{ left: titlePos }">{{
+            job.company
+          }}</v-card-title>
           <div class="cardDetails" v-if="hover">
             <h4 class="cardDetails-Title">
               <span class="luckyBlueText bolder">{{ job.role }}</span> @
@@ -40,7 +43,12 @@
 <script>
 export default {
   name: "WorkCard",
-  data() {},
+  data() {
+    return {
+      titlePos: "25%",
+      cardIcon: "38%",
+    };
+  },
   props: {
     job: Object,
     default() {
@@ -54,8 +62,17 @@ export default {
       };
     },
   },
-  methods: {},
-  mounted() {},
+  methods: {
+    changePos() {
+      if (this.job.company.length < 10) {
+        this.titlePos = "30.5%";
+        this.cardIcon = "36.5%"; // 38
+      }
+    },
+  },
+  mounted() {
+    this.changePos();
+  },
 };
 </script>
 
@@ -63,7 +80,7 @@ export default {
 .cardBackground {
   position: relative;
   background-color: rgb(0, 106, 199, 0.855);
-  height: 300px;
+  height: 350px;
   transition: 0.5s ease-in-out;
 }
 .cardBackground:hover {
@@ -76,7 +93,7 @@ export default {
 .cardIcon {
   position: absolute;
   top: 34%;
-  left: 35%;
+  left: 38%;
 }
 .cardTitle {
   position: absolute;
@@ -85,7 +102,7 @@ export default {
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  top: 70%;
+  top: 60%;
   left: 25%;
   translate: (-50%, 50%);
 }
@@ -93,7 +110,7 @@ export default {
   opacity: 1;
   position: relative;
   background-color: rgba(0, 0, 0, 0.109);
-  height: 300px;
+  height: 350px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   opacity: 0;
@@ -108,6 +125,7 @@ export default {
 }
 .cardDetails-Dates {
   text-align: center;
+  font-weight: bold;
 }
 
 .cardDetails-Details {

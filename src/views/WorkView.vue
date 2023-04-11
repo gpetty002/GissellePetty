@@ -4,7 +4,7 @@
       Work <span class="bold luckyBlueText">Experience</span>
     </h3>
     <!-- <h3 class="workTagLine">Check out what I've been up to!</h3> -->
-    <div class="workBorder"></div>
+    <hr class="workBorder" />
     <v-row class="fill-height" justify="center">
       <template v-for="(job, i) in myJobs">
         <v-col class="workList" :key="i" cols="12" md="4">
@@ -45,7 +45,7 @@ export default {
   font-weight: normal;
   font-size: 45px;
   top: 15%;
-  left: 36%;
+  left: 38%;
 }
 .workTagLine {
   position: absolute;
@@ -57,14 +57,16 @@ export default {
 .workList {
   /* position: absolute; */
   padding-top: 20%;
+  padding-left: 45px;
 }
 .workBorder {
   display: block;
   width: 350px;
   height: 3px;
-  background: #006ac7;
+  background: ;
   position: absolute;
   top: 24%;
-  left: 36%;
+  left: 38%;
+  border-bottom: 4.5px solid #006ac7;
 }
 </style>
