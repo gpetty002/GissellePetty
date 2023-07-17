@@ -1,13 +1,18 @@
 <template>
   <v-app>
-    <div class="desktopHomeHeader" id="homeView">
-      <TopNavBar></TopNavBar>
-      <HomeView></HomeView>
+    <mobile-menu v-if="$mq === 'mobile'">
+      <h1>I am on mobile</h1>
+    </mobile-menu>
+    <div v-else class="desktop">
+      <div class="desktopHomeHeader" id="homeView">
+        <TopNavBar></TopNavBar>
+        <HomeView></HomeView>
+      </div>
+      <AboutView></AboutView>
+      <WorkView></WorkView>
+      <ProjectView></ProjectView>
+      <FooterBar></FooterBar>
     </div>
-    <AboutView></AboutView>
-    <WorkView></WorkView>
-    <ProjectView></ProjectView>
-    <FooterBar></FooterBar>
   </v-app>
 </template>
 
