@@ -61,12 +61,12 @@ export default {
 }
 .workBorder {
   display: block;
-  width: 350px;
+  width: 550px;
   height: 3px;
-  background: ;
+  background: #006ac7;
   position: absolute;
-  top: 24%;
-  left: 38%;
+  top: 25%;
+  left: 31%;
   border-bottom: 4.5px solid #006ac7;
 }
 </style>

@@ -1,4 +1,15 @@
 {
+  "BACKTOJUNGLE": {
+    "name": "Back to the Jungle",
+    "date": "May 2023 - June 2023",
+    "gitHub": "https://github.com/beanbeanjuice/back-to-the-jungle",
+    "language": "C#, Git, Unity",
+    "funFact": "I worked with five other people on this side scroller and we made this in about 3 and a half weeks with a close deadline",
+    "biggestChallenge": "I had never worked with Unity before so the idea of manipulating prefabs in clever ways was very new territory for me. Timing the birds target system correctly was extremely. Using CoRoutines, I implemented a system where the warning prefab would follow the player's y position for three seconds and then immediately lock on. I'd store the position and use this for the bird-like missile.",
+    "media": "game",
+    "url": "/BackToJungleSS.png",
+    "externalLink": "https://simmer.io/@gpetty002/back-to-the-jungle"
+  },
   "PERSONAL_WEBSITE": {
     "name": "Personal Website",
     "date": "March 2022",

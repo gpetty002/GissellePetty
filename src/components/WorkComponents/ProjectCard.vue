@@ -3,41 +3,54 @@
     <v-hover v-slot="{ hover }">
       <v-card class="projectCard" :elevation="hover ? 15 : 4" color="#3680d0">
         <br />
-        <br />
         <p class="projectCardTitle">
           <span class="bolder">{{ project.name }}</span
           >, {{ project.date }}
         </p>
-        <a :href="project.gitHub" class="gitHublink projectCardText"
+
+        <a
+          :href="project.gitHub"
+          target="_blank"
+          class="gitHublink projectCardText"
           >GitHub Repository</a
         >
         <br />
+
         <p class="projectCardText">
           Programming Language:
           <span class="bold">{{ project.language }}</span>
         </p>
+
         <p class="projectCardText">
           <span class="bold">Fun Fact: </span>{{ project.funFact }}
         </p>
+
+        <a
+          :href="project.externalLink"
+          target="_blank"
+          v-if="isExternal"
+          class="gitHublink projectCardText"
+          >PLAY!</a
+        >
+
         <p class="projectCardText">
           <span class="bold">Biggest Challenge: </span
           >{{ project.biggestChallenge }}
         </p>
-
-        <v-img
-          class="projectCardImg"
-          v-if="isImg"
-          :src="getImg"
-          width="480"
-          height="320"
-        ></v-img>
         <iframe
           class="projectCardVideo"
-          v-else
+          v-if="isVideo"
           :src="project.url"
           width="480"
           height="320"
         ></iframe>
+        <v-img
+          class="projectCardImg"
+          v-else
+          :src="getImg"
+          width="480"
+          height="320"
+        ></v-img>
       </v-card>
     </v-hover>
   </div>
@@ -63,19 +76,27 @@ export default {
         biggestChallenge: "fixing this error ;)",
         media: "img",
         url: "/Users/gissellepetty/Desktop/my_website/src/assets/Squidward-Looking-Out-Window-Meme.png",
+        externalLink: "N/A",
       };
     },
   },
   computed: {
-    isImg() {
-      if (this.project.media == "img") {
+    isVideo() {
+      if (this.project.media == "video") {
         return true;
-      } else {
-        return false;
       }
+      return false;
     },
     getImg() {
       return require("@/assets" + this.project.url);
+    },
+    isExternal() {
+      if (this.project.media == "game") {
+        return true;
+      } else if (this.project.media == "mobile") {
+        return true;
+      }
+      return false;
     },
   },
   mounted() {},

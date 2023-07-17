@@ -30,7 +30,7 @@ export default {
 .projects {
   position: relative;
   width: 100%;
-  height: 450vh;
+  height: 520vh;
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -39,16 +39,16 @@ export default {
 .projectsTitle {
   position: absolute;
   font-size: 50px;
-  top: 5%;
+  top: 4%;
   left: 41.5%;
 }
 .projectBorder {
   display: block;
-  width: 205px;
+  width: 500px;
   height: 3px;
   position: absolute;
-  top: 7.2%;
-  left: 41%;
+  top: 6%;
+  left: 31%;
   border-bottom: 4px solid #006ac7;
 }
 .projectCards {

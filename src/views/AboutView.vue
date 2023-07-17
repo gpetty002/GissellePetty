@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <v-img class="VOPicture" src="../assets/virginOrbitPhoto3.jpg"></v-img>
+    <v-img class="aboutMe-Picture" src="../assets/FlowerPicture.png"></v-img>
     <h3 class="aboutMe-Title">About Me.</h3>
     <h3 class="aboutMe-Name">
       Welcome to my website, I'm
@@ -118,10 +118,11 @@ export default {
   font-weight: normal;
   background-color: white;
 }
-.VOPicture {
+
+.aboutMe-Picture {
   position: absolute;
   width: 33%;
-  top: 15%;
+  top: 20%;
   left: 8%;
   border: 5px solid rgba(0, 0, 0, 0.207);
 }
