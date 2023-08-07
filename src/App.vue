@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <mobile-menu v-if="$mq === 'mobile'">
-      <h1>I am on mobile</h1>
+      <mHomeView></mHomeView>
     </mobile-menu>
     <div v-else class="desktop">
       <div class="desktopHomeHeader" id="homeView">
@@ -17,12 +17,16 @@
 </template>
 
 <script>
-import TopNavBar from "@/components/TopNavBar.vue";
+import TopNavBar from "./components/TopNavBar.vue";
+import FooterBar from "./components/FooterBar.vue";
+
 import HomeView from "./views/HomeView.vue";
 import AboutView from "./views/AboutView.vue";
 import WorkView from "./views/WorkView.vue";
 import ProjectView from "./views/ProjectView.vue";
-import FooterBar from "./components/FooterBar.vue";
+
+import mHomeView from "./views/MobileViews/mHomeView.vue";
+
 export default {
   name: "App",
   components: {
@@ -32,6 +36,7 @@ export default {
     WorkView,
     ProjectView,
     FooterBar,
+    mHomeView,
   },
 };
 </script>

@@ -90,7 +90,7 @@ export default {
     },
     styleButton() {
       return {
-        "--color-hover": this.blue,
+        "--color-hover": this.blueColor,
       };
     },
   },
