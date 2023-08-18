@@ -3,7 +3,6 @@
     <h3 class="workTitle">
       Work <span class="bold luckyBlueText">Experience</span>
     </h3>
-    <!-- <h3 class="workTagLine">Check out what I've been up to!</h3> -->
     <hr class="workBorder" />
     <v-row class="fill-height" justify="center">
       <template v-for="(job, i) in myJobs">

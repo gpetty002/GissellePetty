@@ -1,12 +1,21 @@
 <template>
   <v-layout>
-    <v-app-bar elevation="0" :color="bg" app flat clipped-left>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <v-app-bar elevation="0" :color="bg" class="mobileNavBar" app>
       <v-btn plain :style="{ color: isScrolling ? 'white' : 'black' }">
         Gisselle Petty
       </v-btn>
 
       <div class="mNavHamburgerWrapper">
-        <v-btn plain class="mNavHamburger" @click="drawer = !drawer">
+        <v-btn
+          plain
+          :style="{ color: isScrolling ? 'white' : 'black' }"
+          class="mNavHamburger"
+          @click="drawer = !drawer"
+        >
           <font-awesome-icon :icon="['fass', 'bars']" />
         </v-btn>
       </div>
@@ -17,12 +26,12 @@
       clipped
       flat
       class="mNavDrawer"
-      height="100vh"
-      absolute
+      height="105vh"
+      fixed
       v-model="drawer"
     >
       <v-list>
-        <v-list-item title="Gisselle Petty">
+        <v-list-item href="#mHome" title="Gisselle Petty">
           <v-list-item-avatar>
             <img src="../../assets/santaMonica.png" />
           </v-list-item-avatar>
@@ -33,10 +42,25 @@
       <v-divider></v-divider>
 
       <v-list density="compact" nav>
-        <v-list-item title="About Me">About Me</v-list-item>
-        <v-list-item title="Work Experience">Work Experience</v-list-item>
-        <v-list-item title="Projects">Projects</v-list-item>
-        <v-list-item title="Resume">Resume</v-list-item>
+        <v-list-item @click="drawer = !drawer" href="#mAbout" title="About Me"
+          >About Me</v-list-item
+        >
+        <v-list-item
+          @click="drawer = !drawer"
+          href="#mWork"
+          title="Work Experience"
+          >Work Experience</v-list-item
+        >
+        <v-list-item @click="drawer = !drawer" href="#mProject" title="Projects"
+          >Projects</v-list-item
+        >
+        <v-list-item
+          @click="drawer = !drawer"
+          href="GissellePettyResume.pdf"
+          download
+          title="Resume"
+          >Resume</v-list-item
+        >
       </v-list>
     </v-navigation-drawer>
   </v-layout>
@@ -85,6 +109,10 @@ export default {
 </script>
 
 <style>
+.mobileNavBar {
+  position: fixed;
+  -webkit-backface-visibility: hidden;
+}
 .mNavHamburgerWrapper {
   display: flex;
   justify-content: flex-end;
@@ -93,9 +121,5 @@ export default {
 }
 .mNavHamburger {
   margin-left: 135px;
-}
-
-.mNavDrawer {
-  padding-top: 7vh;
 }
 </style>

@@ -11,13 +11,13 @@
         <a
           :href="project.gitHub"
           target="_blank"
-          class="gitHublink projectCardText"
-          >GitHub Repository</a
+          class="importantLinks projectCardText"
+          >Github Repository</a
         >
         <br />
 
         <p class="projectCardText">
-          Programming Language:
+          Language:
           <span class="bold">{{ project.language }}</span>
         </p>
 
@@ -139,13 +139,5 @@ export default {
   border: 1px solid #006ac7ce;
   top: 22%;
   left: 50.5%;
-}
-.gitHublink:link {
-  font-weight: bold;
-  color: white;
-}
-.gitHublink:visited {
-  font-weight: bold;
-  color: white;
 }
 </style>

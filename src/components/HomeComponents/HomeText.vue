@@ -1,9 +1,7 @@
 <template>
   <div class="homeTextLayout">
     <h3 class="welcomeText slideLeft">Hello,<br />I'm Gisselle.</h3>
-    <h4 class="homeTagline slideLeft">
-      Fullstack Developer | Software Enthusiast | Creative Mind
-    </h4>
+    <h4 class="homeTagline slideLeft">Software Engineer | Creative Mind</h4>
     <v-img class="homeSelfie slideLeft" src="@/assets/santaMonica.png"></v-img>
     <v-btn
       elevation="15"

@@ -22,3 +22,13 @@
   border-width: 0.5px !important;
   border-color: black !important;
 }
+
+.importantLinks:link {
+  font-weight: bold;
+  color: white;
+}
+
+.importantLinks:visited {
+  font-weight: bold;
+  color: white;
+}

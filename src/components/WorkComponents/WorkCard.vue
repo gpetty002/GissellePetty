@@ -130,7 +130,7 @@ export default {
 
 .cardDetails-Details {
   /* position: absolute; */
-  font-size: 16px;
+  font-size: 15px;
   /* top: 20%; */
   /* left: 3%; */
   padding-left: 10px;

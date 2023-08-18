@@ -4,7 +4,11 @@
     "company": "Blizzard",
     "startDate": "June 2023",
     "endDate": "September 2023",
-    "details": ["TBD"],
+    "details": [
+      "Designed and implemented a cross-platform Text-to-Speech application and a gamepad sample prototype to enhance native platform support using C++ programming",
+      "Formulated a core API library that exposed platform-specific text-to-speech functionalities on both Windows and PS5 platforms",
+      "Devised and structured the UI for both Text-to-Speech and gamepad sample applications, employing the ImGui library alongside internal gamepad libraries"
+    ],
     "fontIcon": "fa-solid fa-gamepad"
   },
   "SWE_INTERN1": {

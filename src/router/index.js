@@ -3,7 +3,11 @@ import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import WorkView from "../views/WorkView.vue";
-import ContactView from "../views/ContactView.vue";
+import ProjectView from "../views/ProjectView.vue";
+import mHomeView from "../views/MobileViews/mHomeView.vue";
+import mAboutView from "../views/MobileViews/mAboutView.vue";
+import mWorkView from "../views/MobileViews/mWorkView.vue";
+import mProjectView from "../views/MobileViews/mProjectView.vue";
 
 Vue.use(VueRouter);
 
@@ -24,9 +28,29 @@ const routes = [
     component: WorkView,
   },
   {
-    path: "/contact",
-    name: "contact",
-    component: ContactView,
+    path: "/projects",
+    name: "project",
+    component: ProjectView,
+  },
+  {
+    path: "/mHome",
+    name: "mHome",
+    component: mHomeView,
+  },
+  {
+    path: "/mAbout",
+    name: "mAbout",
+    component: mAboutView,
+  },
+  {
+    path: "/mWork",
+    name: "mWork",
+    component: mWorkView,
+  },
+  {
+    path: "/mProjects",
+    name: "mProject",
+    component: mProjectView,
   },
 ];
 
