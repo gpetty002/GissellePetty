@@ -4,11 +4,13 @@
       <span class="bold luckyBlueText">Projects</span>
     </h3>
     <hr class="projectBorder" />
-    <template v-for="(index, i) in myProjects">
-      <v-col class="projectCards" :key="i" cols="100" md="100">
-        <ProjectCard :project="index"></ProjectCard>
-      </v-col>
-    </template>
+    <v-row class="projectList">
+      <template v-for="(index, i) in myProjects">
+        <div :key="i">
+          <ProjectCard :project="index"></ProjectCard>
+        </div>
+      </template>
+    </v-row>
   </div>
 </template>
 
@@ -30,7 +32,7 @@ export default {
 .projects {
   position: relative;
   width: 100%;
-  height: 520vh;
+  height: 490vh;
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -47,5 +49,9 @@ export default {
   margin: 0 auto;
   margin-bottom: 50px;
   border-bottom: 4px solid #006ac7;
+}
+.projectList {
+  align-content: center;
+  justify-content: center;
 }
 </style>

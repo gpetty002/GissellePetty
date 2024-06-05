@@ -34,13 +34,13 @@
             >{{ project.biggestChallenge }}
           </p>
 
-          <a
+          <!-- <a
             v-if="isHistoricalStories"
             href="/historicalStories"
             class="gitHublink importantLinks"
             target="_blank"
             >Learn more about Historical Stories</a
-          >
+          > -->
         </div>
 
         <iframe
@@ -122,7 +122,6 @@ export default {
   height: 500px;
   width: 1100px;
   margin-bottom: 50px;
-  margin-left: 160px;
 }
 .projectCardTitle {
   padding-left: 50px;
