@@ -37,21 +37,15 @@ export default {
   font-weight: normal;
 }
 .projectsTitle {
-  position: absolute;
   font-size: 50px;
-  top: 4%;
-  left: 41.5%;
+  text-align: center;
 }
 .projectBorder {
   display: block;
   width: 500px;
   height: 3px;
-  position: absolute;
-  top: 6%;
-  left: 31%;
+  margin: 0 auto;
+  margin-bottom: 50px;
   border-bottom: 4px solid #006ac7;
-}
-.projectCards {
-  margin-top: 12%;
 }
 </style>

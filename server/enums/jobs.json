@@ -1,5 +1,13 @@
 {
-  "SWE_INTERN": {
+  "SWE_INTERN3": {
+    "role": "Software Engineer Intern",
+    "company": "Microsoft",
+    "startDate": "June 2024",
+    "endDate": "September 2024",
+    "details": ["TBD"],
+    "fontIcon": "fa-brands fa-microsoft"
+  },
+  "SWE_INTERN2": {
     "role": "Software Engineer Intern",
     "company": "Blizzard",
     "startDate": "June 2023",

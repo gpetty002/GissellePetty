@@ -24,8 +24,9 @@
           >Javascript, Vue.js, React, C/C++, ImGui, Swift</span
         >. <br />
         <br />
-        I'm currently a fourth-year studying Computer Science at the
+        I'm currently studying Computer Science at the
         <span class="bold luckyBlueText">University of California, Davis</span>.
+        I am graduating <span class="bold luckyBlueText">June 2025</span>
         <br />
         <br />
 
@@ -103,8 +104,8 @@ export default {
 
 <style>
 .mobileAbout {
-  padding-top: 15vh;
-  padding-bottom: 10vh;
+  padding-top: 20vh;
+  padding-bottom: 5vh;
 }
 .mobileAboutMePicture {
   margin-left: auto;

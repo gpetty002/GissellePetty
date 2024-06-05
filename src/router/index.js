@@ -8,6 +8,7 @@ import mHomeView from "../views/MobileViews/mHomeView.vue";
 import mAboutView from "../views/MobileViews/mAboutView.vue";
 import mWorkView from "../views/MobileViews/mWorkView.vue";
 import mProjectView from "../views/MobileViews/mProjectView.vue";
+import HistoricalStories from "../views/HistoricalStories.vue";
 
 Vue.use(VueRouter);
 
@@ -52,6 +53,11 @@ const routes = [
     name: "mProject",
     component: mProjectView,
   },
+  {
+    path: "/historicalStories",
+    name: "HistoricalStories",
+    component: HistoricalStories,
+  },
 ];
 
 const router = new VueRouter({
@@ -61,3 +67,9 @@ const router = new VueRouter({
 });
 
 export default router;
+
+// be more specific with stories
+// guide what i want from them
+// independent study - under special direct study
+// meet with alma
+// 199 or 198 units

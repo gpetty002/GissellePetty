@@ -7,7 +7,7 @@
       <span class="bold luckyBlueText">Gisselle Petty</span>.
     </h3>
     <p class="bio">
-      I'm a <span class="bold luckyBlueText">software developer</span> with
+      I'm a <span class="bold luckyBlueText">software engineer</span> with
       experience in
       <span class="bold luckyBlueText"
         >fullstack development,web development and mobile development</span
@@ -16,11 +16,12 @@
       <span class="bold luckyBlueText"
         >Javascript, Vuejs, C/C++, React, and Swift</span
       >. <br /><br />
-      I'm currently a third-year studying Computer Science at the
-      <span class="bold luckyBlueText">University of California, Davis</span>.
+      I'm currently studying Computer Science at the
+      <span class="bold luckyBlueText">University of California, Davis</span>. I
+      am graduating <span class="bold luckyBlueText">June 2025</span>.
       <br /><br />
 
-      As a software developer, my main mission is to
+      As a software engineer, my main mission is to
       <span class="bold luckyBlueText">creatively code</span>. What does this
       mean? While I have a passion to grow and explore as much as possible
       through my experience and projects, I love to focus and embrace Computer
@@ -111,7 +112,7 @@ export default {
 .about {
   position: relative;
   width: 100%;
-  height: 140vh;
+  height: 120vh;
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;

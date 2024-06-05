@@ -1,4 +1,15 @@
 {
+  "HISTORICAL_STORIES": {
+    "name": "Historical Stories",
+    "date": "April 2024 - Present",
+    "gitHub": "https://github.com/gpetty002/historicalStories",
+    "language": "React Native, Express, Axios, MongoDB, OpenAI API",
+    "funFact": "The 48 Laws of Power written by Robert Greene inspired me to begin this project",
+    "biggestChallenge": "This was the first solo fullstack project, so defining the endpoints in order to communicate with the front-end was difficult. When I needed to pass data through screens I kept getting confused with the routes object because its routes.params.route. Check out my full page dedicated to Historical Stories!",
+    "media": "img",
+    "url": "/historicalStories.png",
+    "externalLink": "newPage"
+  },
   "BACKTOJUNGLE": {
     "name": "Back to the Jungle",
     "date": "May 2023 - June 2023",
@@ -12,7 +23,7 @@
   },
   "PERSONAL_WEBSITE": {
     "name": "Personal Website",
-    "date": "March 2022",
+    "date": "March 2022 - Present",
     "gitHub": "https://github.com/gpetty002/gpetty.git",
     "language": "Vuejs, Vuetify, Javascript, Git",
     "funFact": "I taught kids how to make their own websites, before I even made mine.",
@@ -21,7 +32,7 @@
     "url": "/websiteSS.png"
   },
   "KRABBY_PATTY": {
-    "name": "Krabby Patty Flipping Game (unfinished)",
+    "name": "Krabby Patty Flipping Game",
     "date": "July 2021 - March 2022",
     "gitHub": "https://github.com/gpetty002/Squidward-Adventure.git",
     "language": "C++, SFML 2.0, Git",

@@ -8,35 +8,41 @@
           >, {{ project.date }}
         </p>
 
-        <a
-          :href="project.gitHub"
-          target="_blank"
-          class="importantLinks projectCardText"
-          >Github Repository</a
-        >
-        <br />
+        <div class="projectCardText">
+          <a :href="project.gitHub" target="_blank" class="importantLinks"
+            >Github Repository</a
+          >
 
-        <p class="projectCardText">
-          Language:
-          <span class="bold">{{ project.language }}</span>
-        </p>
+          <p>
+            Language:
+            <span class="bold">{{ project.language }}</span>
+          </p>
 
-        <p class="projectCardText">
-          <span class="bold">Fun Fact: </span>{{ project.funFact }}
-        </p>
+          <p><span class="bold">Fun Fact: </span>{{ project.funFact }}</p>
 
-        <a
-          :href="project.externalLink"
-          target="_blank"
-          v-if="isExternal"
-          class="gitHublink projectCardText"
-          >PLAY!</a
-        >
+          <a
+            :href="project.externalLink"
+            target="_blank"
+            v-if="isExternal"
+            class="gitHublink importantLinks"
+            >PLAY!</a
+          >
 
-        <p class="projectCardText">
-          <span class="bold">Biggest Challenge: </span
-          >{{ project.biggestChallenge }}
-        </p>
+          <br v-if="isExternal" />
+          <p>
+            <span class="bold">Biggest Challenge: </span
+            >{{ project.biggestChallenge }}
+          </p>
+
+          <a
+            v-if="isHistoricalStories"
+            href="/historicalStories"
+            class="gitHublink importantLinks"
+            target="_blank"
+            >Learn more about Historical Stories</a
+          >
+        </div>
+
         <iframe
           class="projectCardVideo"
           v-if="isVideo"
@@ -98,6 +104,12 @@ export default {
       }
       return false;
     },
+    isHistoricalStories() {
+      if (this.project.externalLink == "newPage") {
+        return true;
+      }
+      return false;
+    },
   },
   mounted() {},
 };
@@ -108,22 +120,24 @@ export default {
   position: relative;
   background-color: #006ac75b;
   height: 500px;
-  width: 70%;
-  top: 150px;
-  left: 15%;
+  width: 1100px;
+  margin-bottom: 50px;
+  margin-left: 160px;
 }
 .projectCardTitle {
-  padding-left: 20px;
+  padding-left: 50px;
   font-size: 30px;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-bottom: 15px;
 }
 .projectCardText {
   /* padding-top: 40px; */
   font-size: 17px;
   width: 50%;
-  padding-left: 20px;
+  padding-left: 50px;
+  padding-right: 30px;
   color: white;
   font-weight: 500;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -131,13 +145,14 @@ export default {
 }
 .projectCardImg {
   position: absolute;
-  top: 22%;
+  top: 12vh;
   left: 50.5%;
+  border: 5px solid black;
 }
 .projectCardVideo {
   position: absolute;
-  border: 1px solid #006ac7ce;
-  top: 22%;
+  border: 5px solid black;
+  top: 12vh;
   left: 50.5%;
 }
 </style>

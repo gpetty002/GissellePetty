@@ -4,11 +4,11 @@
       Work <span class="bold luckyBlueText">Experience</span>
     </h3>
     <hr class="workBorder" />
-    <v-row class="fill-height" justify="center">
+    <v-row class="workList" justify="center">
       <template v-for="(job, i) in myJobs">
-        <v-col class="workList" :key="i" cols="12" md="4">
-          <WorkCard :job="job"></WorkCard>
-        </v-col>
+        <div :key="i">
+          <WorkCard class="workCard" :job="job"></WorkCard>
+        </div>
       </template>
     </v-row>
   </div>
@@ -30,42 +30,41 @@ export default {
 
 <style>
 .work {
-  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.643);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: normal;
+  align-content: center;
 }
 .workTitle {
-  position: absolute;
   font-weight: normal;
   font-size: 45px;
-  top: 15%;
-  left: 38%;
+  padding-top: 250px;
+  align-content: center;
+  text-align: center;
 }
 .workTagLine {
-  position: absolute;
-  /* font-weight: normal; */
   font-size: 20px;
-  top: 25%;
-  left: 37.5%;
 }
 .workList {
-  /* position: absolute; */
-  padding-top: 20%;
-  padding-left: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-content: center;
+}
+.workCard {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 60px;
 }
 .workBorder {
-  display: block;
   width: 550px;
   height: 3px;
   background: #006ac7;
-  position: absolute;
-  top: 25%;
-  left: 31%;
   border-bottom: 4.5px solid #006ac7;
+  margin: 0 auto; /* Center the element */
+  margin-bottom: 60px;
 }
 </style>

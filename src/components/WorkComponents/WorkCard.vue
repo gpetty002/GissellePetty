@@ -1,19 +1,19 @@
 <template>
   <div class="workCard">
     <v-hover v-slot="{ hover }">
-      <v-card :elevation="hover ? 15 : 4" max-width="400">
+      <v-card :elevation="hover ? 15 : 4" max-width="450">
         <div class="cardBackground">
-          <font-awesome-icon
-            class="cardIcon justify-center"
-            :icon="job.fontIcon"
-            color="white"
-            size="5x"
-            :style="{ left: cardIcon }"
-          />
+          <div class="iconContainer">
+            <font-awesome-icon
+              class="cardIcon"
+              :icon="job.fontIcon"
+              color="white"
+              size="5x"
+            />
+          </div>
 
-          <v-card-title class="cardTitle" v-bind:style="{ left: titlePos }">{{
-            job.company
-          }}</v-card-title>
+          <v-card-title class="cardTitle">{{ job.company }}</v-card-title>
+
           <div class="cardDetails" v-if="hover">
             <h4 class="cardDetails-Title">
               <span class="luckyBlueText bolder">{{ job.role }}</span> @
@@ -23,15 +23,9 @@
               {{ job.startDate }} - {{ job.endDate }}
             </p>
             <template v-for="(index, i) in job.details">
-              <v-col
-                class="cardDetails-Details"
-                max-width="100"
-                :key="i"
-                cols="20"
-                md="20"
-              >
+              <div :key="i" class="cardDetails-Details">
                 <p>- {{ index }}</p>
-              </v-col>
+              </div>
             </template>
           </div>
         </div>
@@ -43,12 +37,6 @@
 <script>
 export default {
   name: "WorkCard",
-  data() {
-    return {
-      titlePos: "25%",
-      cardIcon: "38%",
-    };
-  },
   props: {
     job: Object,
     default() {
@@ -78,10 +66,15 @@ export default {
 
 <style>
 .cardBackground {
-  position: relative;
   background-color: rgb(0, 106, 199, 0.855);
-  height: 350px;
+  height: 450px;
+  width: 450px;
   transition: 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 .cardBackground:hover {
   background-color: rgba(255, 255, 255, 0.398);
@@ -90,38 +83,44 @@ export default {
 .cardBackground:hover .cardDetails {
   opacity: 1;
 }
-.cardIcon {
-  position: absolute;
-  top: 34%;
-  left: 38%;
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
 }
 .cardTitle {
-  position: absolute;
   font-weight: 800;
   font-size: 28px;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  top: 60%;
-  left: 25%;
-  translate: (-50%, 50%);
+  text-align: center;
 }
 .cardDetails {
   opacity: 1;
-  position: relative;
   background-color: rgba(0, 0, 0, 0.109);
-  height: 350px;
+  height: 450px;
+  width: 450px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   opacity: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute; /* Position it on top of the card */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .cardDetails-Title {
-  /* position: absolute; */
-  font-size: 18px;
-  padding-top: 20px;
-  /* left: 3%; */
+  font-size: 20px;
   text-align: center;
+  padding-top: 20px;
 }
 .cardDetails-Dates {
   text-align: center;
@@ -129,11 +128,6 @@ export default {
 }
 
 .cardDetails-Details {
-  /* position: absolute; */
-  font-size: 15px;
-  /* top: 20%; */
-  /* left: 3%; */
-  padding-left: 10px;
-  font-weight: 600;
+  font-size: 18px;
 }
 </style>
