@@ -6,9 +6,8 @@
     "language": "React Native, Express, Axios, MongoDB, OpenAI API",
     "funFact": "The 48 Laws of Power written by Robert Greene inspired me to begin this project",
     "biggestChallenge": "This was the first solo fullstack project, so defining the endpoints in order to communicate with the front-end was difficult. When I needed to pass data through screens I kept getting confused with the routes object because its routes.params.route. Check out my full page dedicated to Historical Stories!",
-    "media": "img",
-    "url": "/historicalStories.png",
-    "externalLink": "newPage"
+    "media": "video",
+    "url": "https://www.youtube.com/embed/wOQLqo8woqY?si=aTt1xWUEr2i3eKxQ"
   },
   "BACKTOJUNGLE": {
     "name": "Back to the Jungle",
