@@ -7,15 +7,17 @@ module.exports = defineConfig({
       template: "public/index.html",
       filename: "index.html",
     },
-    historical: {
-      entry: "src/historicalStories.js",
-      template: "public/historical.html",
-      filename: "historical.html",
-    },
   },
-  devServer: {
-    historyApiFallback: {
-      rewrites: [{ from: /^\/historicalStories$/, to: "/historical.html" }],
-    },
+  chainWebpack: (config) => {
+    config.module
+      .rule("images")
+      .test(/\.(png|jpe?g|gif|svg)$/i)
+      .use("file-loader")
+      .loader("file-loader")
+      .options({
+        name: "[name].[hash:8].[ext]",
+        outputPath: "assets/",
+        esModule: false,
+      });
   },
 });

@@ -9,11 +9,20 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import VueLazyload from "vue-lazyload";
 
 library.add(fas, far, fab);
 
 Vue.config.productionTip = false;
 Vue.component("font-awesome-icon", FontAwesomeIcon);
+
+Vue.use(VueLazyload, {
+  preLoad: 1.3,
+  error: "../src/assets/error.jpeg",
+  loading: "../src/assets/loading.gif",
+  attempt: 1,
+});
+
 Vue.use(VueMq, {
   breakpoints: {
     mobile: 450,

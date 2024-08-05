@@ -8,7 +8,6 @@ import mHomeView from "../views/MobileViews/mHomeView.vue";
 import mAboutView from "../views/MobileViews/mAboutView.vue";
 import mWorkView from "../views/MobileViews/mWorkView.vue";
 import mProjectView from "../views/MobileViews/mProjectView.vue";
-import HistoricalStories from "../views/HistoricalStories.vue";
 
 Vue.use(VueRouter);
 
@@ -52,11 +51,6 @@ const routes = [
     path: "/mProjects",
     name: "mProject",
     component: mProjectView,
-  },
-  {
-    path: "/historicalStories",
-    name: "HistoricalStories",
-    component: HistoricalStories,
   },
 ];
 
