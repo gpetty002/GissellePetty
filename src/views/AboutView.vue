@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <v-img class="aboutMe-Picture" src="../assets/AboutPicture.JPG"></v-img>
+    <v-img class="aboutMe-Picture" src="../assets/aboutPicture.jpg"></v-img>
     <h3 class="aboutMe-Title">About Me.</h3>
     <h3 class="aboutMe-Name">
       Welcome to my website, I'm

@@ -2,7 +2,7 @@
   <div class="mobileAbout" id="mAbout">
     <v-img
       class="mobileAboutMePicture"
-      src="../../assets/FlowerPicture.png"
+      src="../../assets/aboutPicture.jpg"
     ></v-img>
     <div class="mobileAboutText">
       <h3 class="mTitle">About Me.</h3>
