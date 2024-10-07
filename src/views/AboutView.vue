@@ -9,12 +9,11 @@
     <p class="bio">
       I'm a <span class="bold luckyBlueText">software engineer</span> with
       experience in
-      <span class="bold luckyBlueText"
-        >fullstack development,web development and mobile development</span
-      >. <br /><br />
+      <span class="bold luckyBlueText">fullstack development.</span>.
+      <br /><br />
       I'm most familiar with the languages and frameworks
       <span class="bold luckyBlueText"
-        >Javascript, Vuejs, C/C++, React, and Swift</span
+        >JavaScript, TypeScript, Vuejs, C/C++, React, Swift, and Jest</span
       >. <br /><br />
       I'm currently studying Computer Science at the
       <span class="bold luckyBlueText">University of California, Davis</span>. I
@@ -40,11 +39,8 @@
 
       <br /><br />
 
-      When I'm not creatively coding, I love to spend my time cooking meals,
-      such as my famous tofu and brocolli bowl, going out for morning runs, and
-      spending time with close friends at the beach. There's nothing like
-      listening to the ocean!
-
+      When I'm not coding, you can find me on a morning run, near an ocean, or
+      listening to LL Cool J.
       <br /><br />
 
       Connect with me on my socials!

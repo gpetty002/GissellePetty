@@ -1,6 +1,6 @@
 <template>
   <div class="mHomeTextLayout center">
-    <v-img class="mobileSelfie" src="@/assets/santaMonica.png"></v-img>
+    <v-img elevation-24 class="mobileSelfie" src="@/assets/rainier.png"></v-img>
     <h3 style="font-size: 30px">Hello, I'm Gisselle</h3>
     <h4>Software Engineer | Creative Mind</h4>
     <v-btn
@@ -27,12 +27,12 @@ export default {
   color: white;
   font-size: 16px;
   font-weight: bolder;
-  padding-top: 20vh;
+  padding-top: 15vh;
   text-align: center;
 }
 
 .mobileSelfie {
-  width: 35%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2vh;
@@ -45,7 +45,7 @@ export default {
 
 .mobileScroll {
   font-size: 17px;
-  padding-top: 20vh;
+  padding-top: 10vh;
   padding-bottom: 1vh;
 }
 

@@ -14,14 +14,12 @@
       <p class="mBio">
         I'm a <span class="bold luckyBlueText">software engineer</span> with
         experience in
-        <span class="bold luckyBlueText"
-          >fullstack development, web and mobile development, and game
-          development</span
-        >. <br />
+        <span class="bold luckyBlueText">fullstack development</span>. <br />
         <br />
         I'm most familiar with the languages and frameworks
         <span class="bold luckyBlueText"
-          >Javascript, Vue.js, React, C/C++, ImGui, Swift</span
+          >JavaScript, TypeScript, Vue.js, React, C/C++, ImGui, Swift, and
+          Jest</span
         >. <br />
         <br />
         I'm currently studying Computer Science at the
@@ -45,6 +43,16 @@
 
         <br />
         <br />
+
+        Explore my projects to see where I creatively code!
+
+        <br /><br />
+
+        When I'm not coding, you can find me on a morning run, near an ocean, or
+        listening to LL Cool J.
+
+        <br /><br />
+
         Connect with me on my socials!
         <br />
         <button class="mobileIconBtn" @click="goToLinkedIn()">
@@ -104,7 +112,7 @@ export default {
 
 <style>
 .mobileAbout {
-  padding-top: 20vh;
+  padding-top: 15vh;
   padding-bottom: 5vh;
 }
 .mobileAboutMePicture {

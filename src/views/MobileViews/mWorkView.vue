@@ -32,6 +32,6 @@ export default {
   padding-top: 10vh;
 }
 .mobileWork {
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
 }
 </style>

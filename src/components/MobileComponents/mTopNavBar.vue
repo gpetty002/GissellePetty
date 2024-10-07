@@ -81,17 +81,17 @@ export default {
   components: {},
   methods: {
     changeColor() {
-      if (
-        document.body.scrollTop > 100 ||
-        document.documentElement.scrollTop > 100
-      ) {
+      const scrollPosition = document.scrollingElement.scrollTop;
+      if (scrollPosition > 100) {
         this.bg = "black";
         this.btnBg = "white";
         this.isScrolling = true;
+        this.changeStatusBarColor("black");
       } else {
         this.isScrolling = false;
         this.bg = "white";
         this.btnBg = "black";
+        this.changeStatusBarColor("white");
       }
     },
     styleButton() {
@@ -99,20 +99,39 @@ export default {
         "--color-active": this.blueColor,
       };
     },
+    changeStatusBarColor(color) {
+      let metaThemeColor = document.querySelector(`meta[name="theme-color"]`);
+
+      if (metaThemeColor) {
+        metaThemeColor.setAttribute("content", color);
+      } else {
+        metaThemeColor = document.createElement("meta");
+        metaThemeColor.setAttribute("name", "theme-color");
+        metaThemeColor.setAttribute("content", color);
+        document.head.appendChild(metaThemeColor);
+      }
+    },
   },
   mounted() {
-    window.onscroll = () => {
-      this.changeColor();
-    };
+    window.addEventListener("scroll", this.changeColor);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.changeColor);
   },
 };
 </script>
 
 <style>
+body {
+  margin: 0;
+  padding: 0;
+}
 .mobileNavBar {
   position: fixed;
   -webkit-backface-visibility: hidden;
+  width: 100%; /* Set navbar width to 100% */
 }
+
 .mNavHamburgerWrapper {
   display: flex;
   justify-content: flex-end;

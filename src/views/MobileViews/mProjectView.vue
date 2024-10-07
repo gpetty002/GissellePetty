@@ -1,9 +1,6 @@
 <template>
   <div class="mProjectView" id="mProject">
-    <h3
-      class="mTitle mProjectTitle bold luckyBlueText"
-      style="text-align: center"
-    >
+    <h3 class="mTitle mProjectTitle bold" style="text-align: center">
       Projects
     </h3>
     <template v-for="(index, i) in myProjects">

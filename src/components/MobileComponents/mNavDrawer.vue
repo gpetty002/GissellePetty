@@ -1,11 +1,6 @@
 <template>
-  <div class="navDrawer">
-    <v-navigation-drawer
-      class="navDrawer"
-      absolute
-      height="100vh"
-      :v-model="{ drawer }"
-    >
+  <div>
+    <v-navigation-drawer absolute height="100vh" :v-model="{ drawer }">
       <v-list-item title="Gisselle Petty">
         <v-list-item-avatar>
           <img src="../../assets/santaMonica.png" />
@@ -37,9 +32,4 @@ export default {
 };
 </script>
 
-<style>
-.navDrawer {
-  color: black;
-  font-size: large;
-}
-</style>
+<style></style>
