@@ -32,7 +32,7 @@ export default {
 .projects {
   position: relative;
   width: 100%;
-  height: 490vh;
+  height: 530vh;
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -47,7 +47,7 @@ export default {
   width: 500px;
   height: 3px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   border-bottom: 4px solid #006ac7;
 }
 .projectList {

@@ -1,4 +1,14 @@
 {
+  "ROOTS": {
+    "name": "Roots",
+    "date": "April 2024 - Present",
+    "gitHub": "https://github.com/gpetty002/historicalStories",
+    "language": "React Native, Express, Axios, MongoDB, OpenAI API",
+    "funFact": "Every aspect of this app has been achieved solo except the design which a friend of mine helped with. (I'm not a designer LOL).",
+    "biggestChallenge": "Receiving approval from the App Store.",
+    "media": "img",
+    "url": "/rootsLogin.png"
+  },
   "HISTORICAL_STORIES": {
     "name": "Historical Stories",
     "date": "April 2024 - Present",

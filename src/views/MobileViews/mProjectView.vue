@@ -33,6 +33,7 @@ export default {
 .mProjectTitle {
   padding-top: 10vh;
   padding-bottom: 1vh;
+  color: rgb(0, 106, 199, 0.85);
 }
 
 .mProjectCards {

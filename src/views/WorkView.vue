@@ -31,7 +31,7 @@ export default {
 <style>
 .work {
   width: 100%;
-  height: 200vh;
+  min-height: 100vh;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.643);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,

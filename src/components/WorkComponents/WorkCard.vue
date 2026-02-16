@@ -1,36 +1,37 @@
 <template>
   <div class="workCard">
-    <v-hover v-slot="{ hover }">
-      <v-card :elevation="hover ? 15 : 4" max-width="450">
-        <div class="cardBackground">
-          <div class="iconContainer">
-            <font-awesome-icon
-              class="cardIcon"
-              :icon="job.fontIcon"
-              color="white"
-              size="5x"
-            />
-          </div>
-
-          <v-card-title class="cardTitle">{{ job.company }}</v-card-title>
-
-          <div class="cardDetails" v-if="hover">
-            <h4 class="cardDetails-Title">
-              <span class="luckyBlueText bolder">{{ job.role }}</span> @
-              <span class="normal">{{ job.company }}</span>
-            </h4>
-            <p class="cardDetails-Dates normal">
-              {{ job.startDate }} - {{ job.endDate }}
-            </p>
-            <template v-for="(index, i) in job.details">
-              <div :key="i" class="cardDetails-Details">
-                <p>- {{ index }}</p>
-              </div>
-            </template>
+    <v-card class="jobCard" :class="{ expanded: hover }" elevation="6">
+      <div
+        @mouseenter="hover = true"
+        @mouseleave="hover = false"
+        @focusin="hover = true"
+        @focusout="hover = false"
+      >
+        <!-- Header -->
+        <div class="cardHeader">
+          <font-awesome-icon class="cardIcon" :icon="job.fontIcon" size="4x" />
+          <div class="headerText">
+            <h3 class="company">{{ job.company }}</h3>
+            <p class="dates">{{ job.startDate }} - {{ job.endDate }}</p>
           </div>
         </div>
-      </v-card>
-    </v-hover>
+
+        <!-- Details -->
+        <transition name="expand">
+          <div v-if="hover" class="details">
+            <h4 class="role">
+              {{ job.role }}
+            </h4>
+
+            <ul class="bulletList">
+              <li v-for="(detail, i) in job.details" :key="i">
+                {{ detail }}
+              </li>
+            </ul>
+          </div>
+        </transition>
+      </div>
+    </v-card>
   </div>
 </template>
 
@@ -61,73 +62,106 @@ export default {
   mounted() {
     this.changePos();
   },
+  data() {
+    return {
+      hover: false,
+    };
+  },
 };
 </script>
 
 <style>
-.cardBackground {
-  background-color: rgb(0, 106, 199, 0.855);
-  height: 450px;
-  width: 450px;
-  transition: 0.5s ease-in-out;
+.workCard {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  margin: 2rem 0;
+}
+
+/* Base Card */
+.jobCard.v-card {
+  width: 420px;
+  max-width: 90vw;
   padding: 20px;
+  transition: all 0.35s ease;
+  background: rgb(0, 106, 199, 0.85);
+  color: white;
 }
-.cardBackground:hover {
-  background-color: rgba(255, 255, 255, 0.398);
-  transition: 0.5s;
+
+/* Hover expansion */
+.jobCard.expanded {
+  background: rgba(196, 196, 196, 0.398);
 }
-.cardBackground:hover .cardDetails {
-  opacity: 1;
+
+.jobCard.expanded .cardIcon {
+  color: rgb(0, 106, 199, 0.85);
 }
-.iconContainer {
+
+.jobCard.expanded .company {
+  color: rgb(0, 106, 199, 0.85);
+}
+
+.jobCard.expanded .dates {
+  color: black;
+}
+
+/* Header */
+.cardHeader {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 50%;
+  gap: 20px;
 }
-.cardTitle {
-  font-weight: 800;
-  font-size: 28px;
-  color: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-align: center;
+
+.cardIcon {
+  flex-shrink: 0;
 }
-.cardDetails {
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.109);
-  height: 450px;
-  width: 450px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  opacity: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+
+.headerText {
   display: flex;
   flex-direction: column;
-  position: absolute; /* Position it on top of the card */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: opacity 0.5s ease-in-out;
 }
 
-.cardDetails-Title {
-  font-size: 20px;
-  text-align: center;
-  padding-top: 20px;
-}
-.cardDetails-Dates {
-  text-align: center;
-  font-weight: bold;
+.company {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
 }
 
-.cardDetails-Details {
-  font-size: 18px;
+.dates {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* Details Section */
+.details {
+  margin-top: 20px;
+}
+
+.role {
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgb(0, 106, 199, 0.85);
+}
+
+/* Bullets */
+.bulletList {
+  padding-left: 18px;
+  line-height: 1.6;
+  color: black;
+}
+
+.bulletList li {
+  margin-bottom: 8px;
+}
+
+/* Animation */
+.expand-enter-active,
+.expand-leave-active {
+  transition: all 0.35s ease;
+}
+
+.expand-enter-from,
+.expand-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
 }
 </style>

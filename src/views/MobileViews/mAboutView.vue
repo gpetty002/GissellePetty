@@ -12,37 +12,28 @@
       </h3>
       <br />
       <p class="mBio">
-        I'm a <span class="bold luckyBlueText">software engineer</span> with
+        I'm a
+        <span class="bold luckyBlueText">software engineer at Microsoft</span>
+        based in <span class="bold luckyBlueText">New York City</span> with
         experience in
-        <span class="bold luckyBlueText">fullstack development</span>. <br />
-        <br />
+        <span class="bold luckyBlueText">full-stack development</span>.
+        <br /><br />
+
         I'm most familiar with the languages and frameworks
         <span class="bold luckyBlueText"
-          >JavaScript, TypeScript, Vue.js, React, C/C++, ImGui, Swift, and
-          Jest</span
-        >. <br />
-        <br />
-        I'm currently studying Computer Science at the
-        <span class="bold luckyBlueText">University of California, Davis</span>.
-        I am graduating <span class="bold luckyBlueText">June 2025</span>
-        <br />
-        <br />
+          >JavaScript, TypeScript, Vuejs, C/C++, React, Swift, and Jest</span
+        >. <br /><br />
 
-        As a software engineer, my main mission to
-        <span class="bold luckyBlueText">creatively code</span>. What does this
-        mean? While I have passion to grow and explore as much as possible
-        through my experience and projects, I love to focus and embrace Computer
-        Science as an art. Just as a painter uses their paintbrush to paint a
-        beautiful painting on a canvas, a programmer uses their keyboard to
-        develop a powerful application on a laptop. Every decision whether its
-        the color of a notification, or where to store an application's API GET
-        request routes is an artistic choice made by the artist. However,
-        creatively coding isn't only dependent on the artist, but also an
-        application's community - the other artists collarborating on the app
-        and the people who will use application part of their daily routine.
-
-        <br />
-        <br />
+        As a software engineer, my main mission is to
+        <span class="bold luckyBlueText">creatively code</span>. To me, computer
+        science is an art form. A painter uses a brush to shape color on canvas
+        — a programmer uses a keyboard to shape behavior, interaction, and
+        experience. Every decision — from the color of a notification to the
+        structure of an API — is an intentional design choice. Creative coding
+        also extends beyond the individual developer. It lives in collaboration:
+        the engineers building together and the people who integrate the
+        application into their daily lives. Software becomes meaningful when it
+        becomes part of someone's routine. <br /><br />
 
         Explore my projects to see where I creatively code!
 

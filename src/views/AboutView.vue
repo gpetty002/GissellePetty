@@ -7,33 +7,28 @@
       <span class="bold luckyBlueText">Gisselle Petty</span>.
     </h3>
     <p class="bio">
-      I'm a <span class="bold luckyBlueText">software engineer</span> with
+      I'm a
+      <span class="bold luckyBlueText">software engineer at Microsoft</span>
+      based in <span class="bold luckyBlueText">New York City</span> with
       experience in
-      <span class="bold luckyBlueText">fullstack development.</span>.
+      <span class="bold luckyBlueText">full-stack development</span>.
       <br /><br />
+
       I'm most familiar with the languages and frameworks
       <span class="bold luckyBlueText"
         >JavaScript, TypeScript, Vuejs, C/C++, React, Swift, and Jest</span
       >. <br /><br />
-      I'm currently studying Computer Science at the
-      <span class="bold luckyBlueText">University of California, Davis</span>. I
-      am graduating <span class="bold luckyBlueText">June 2025</span>.
-      <br /><br />
 
       As a software engineer, my main mission is to
-      <span class="bold luckyBlueText">creatively code</span>. What does this
-      mean? While I have a passion to grow and explore as much as possible
-      through my experience and projects, I love to focus and embrace Computer
-      Science as an art. Just as a painter uses their paintbrush to paint a
-      beautiful painting on a canvas, a programmer uses their keyboard to
-      develop a powerful application on a laptop. Every decision whether its the
-      color of a notification, or where to store an application's API GET
-      request routes is an artistic choice made by the artist. However,
-      creatively coding isn't only dependent on the artist, but also an
-      application's community - the other artists collaborating on the app and
-      the people who will use the application part of their daily routine.
-
-      <br /><br />
+      <span class="bold luckyBlueText">creatively code</span>. To me, computer
+      science is an art form. A painter uses a brush to shape color on canvas —
+      a programmer uses a keyboard to shape behavior, interaction, and
+      experience. Every decision — from the color of a notification to the
+      structure of an API — is an intentional design choice. Creative coding
+      also extends beyond the individual developer. It lives in collaboration:
+      the engineers building together and the people who integrate the
+      application into their daily lives. Software becomes meaningful when it
+      becomes part of someone's routine. <br /><br />
 
       Explore my projects to see where I creatively code!
 
@@ -108,7 +103,7 @@ export default {
 .about {
   position: relative;
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
