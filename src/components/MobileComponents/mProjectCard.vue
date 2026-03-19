@@ -38,7 +38,7 @@
             :href="project.externalLink"
             target="_blank"
             v-if="isExternal"
-            >PLAY!</a
+            >{{ externalLinkLabel }}</a
           >
           <br v-if="isExternal" />
           <span class="bold">Biggest Challenge: </span
@@ -84,12 +84,10 @@ export default {
       return require("@/assets" + this.project.url);
     },
     isExternal() {
-      if (this.project.media == "game") {
-        return true;
-      } else if (this.project.media == "mobile") {
-        return true;
-      }
-      return false;
+      return !!this.project.externalLink && this.project.externalLink !== "N/A";
+    },
+    externalLinkLabel() {
+      return this.project.media === "game" ? "PLAY!" : "Visit Project";
     },
   },
 };
