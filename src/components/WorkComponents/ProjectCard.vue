@@ -2,7 +2,6 @@
   <div>
     <v-hover v-slot="{ hover }">
       <v-card class="projectCard" :elevation="hover ? 15 : 4" color="#3680d0">
-        <br />
         <p class="projectCardTitle">
           <span class="bolder">{{ project.name }}</span
           >, {{ project.date }}
@@ -25,10 +24,9 @@
             target="_blank"
             v-if="isExternal"
             class="gitHublink importantLinks"
-            >PLAY!</a
+            >{{ externalLinkLabel }}</a
           >
 
-          <br v-if="isExternal" />
           <p>
             <span class="bold">Biggest Challenge: </span
             >{{ project.biggestChallenge }}
@@ -97,12 +95,10 @@ export default {
       return require("@/assets" + this.project.url);
     },
     isExternal() {
-      if (this.project.media == "game") {
-        return true;
-      } else if (this.project.media == "mobile") {
-        return true;
-      }
-      return false;
+      return !!this.project.externalLink && this.project.externalLink !== "N/A";
+    },
+    externalLinkLabel() {
+      return this.project.media === "game" ? "PLAY!" : "Visit Project";
     },
     isHistoricalStories() {
       if (this.project.externalLink == "newPage") {
@@ -125,6 +121,7 @@ export default {
 }
 .projectCardTitle {
   padding-left: 50px;
+  padding-top: 20px;
   font-size: 30px;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -132,7 +129,9 @@ export default {
   padding-bottom: 15px;
 }
 .projectCardText {
-  /* padding-top: 40px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   font-size: 17px;
   width: 50%;
   padding-left: 50px;
@@ -141,6 +140,12 @@ export default {
   font-weight: 500;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.projectCardText p {
+  margin: 0;
+}
+.projectCardText a {
+  display: block;
 }
 .projectCardImg {
   position: absolute;

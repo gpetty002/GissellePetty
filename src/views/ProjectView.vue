@@ -32,7 +32,7 @@ export default {
 .projects {
   position: relative;
   width: 100%;
-  height: 530vh;
+  min-height: fit-content;
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;

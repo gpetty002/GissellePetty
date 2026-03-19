@@ -18,8 +18,6 @@
             />
           </v-btn>
         </v-card-text>
-        <br />
-
         <v-card-text class="white--text pt-0"> Creatively Code </v-card-text>
 
         <v-divider></v-divider>
@@ -67,16 +65,6 @@ export default {
 .footer {
   width: 100%;
 }
-.footerIcons {
-  position: absolute;
-  top: 40%;
-}
-
-.footerMail {
-  top: 19%;
-  left: 58%;
-}
-
 .footerIcons:hover {
   color: white;
 }

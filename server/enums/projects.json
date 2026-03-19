@@ -1,4 +1,15 @@
 {
+  "BROWNSTONE": {
+    "name": "Brownstone",
+    "date": "March 2026 - Present",
+    "gitHub": "https://github.com/gpetty002/brownstone",
+    "language": "React, Express, MongoDB, AWS",
+    "funFact": "I used Claude Code to help me organize the repository.",
+    "biggestChallenge": "Thinking through how AI systems should interact with content on the web. Building middleware that sits between an AI crawler and a site forced me to think about incentives, permissions, and what a fair model even looks like. That turned out to be a harder problem than any infrastructure challenge I faced.",
+    "media": "img",
+    "url": "/brownstoneSS.png",
+    "externalLink": "https://brownstoneai.dev/"
+  },
   "ROOTS": {
     "name": "Roots",
     "date": "April 2024 - Present",
