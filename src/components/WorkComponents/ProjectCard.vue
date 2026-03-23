@@ -79,7 +79,7 @@ export default {
         funFact: "there is an error",
         biggestChallenge: "fixing this error ;)",
         media: "img",
-        url: "/Users/gissellepetty/Desktop/my_website/src/assets/Squidward-Looking-Out-Window-Meme.png",
+        url: "/Users/gissellepetty/Desktop/my_website/src/assets/squidward-Looking-Out-Window-Meme.png",
         externalLink: "N/A",
       };
     },
